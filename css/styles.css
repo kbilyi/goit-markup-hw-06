@@ -111,7 +111,8 @@ color: var(--primary-text-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
     color: var(--secondary-background-color);
 }
 
@@ -131,7 +132,8 @@ color: var(--primary-text-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after {
+.menu-link:hover::after,
+.menu-link:focus::after  {
     opacity: 1;
 }
 
@@ -177,7 +179,8 @@ color: var(--primary-text-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
     color: var(--secondary-background-color);
 }
 
@@ -621,11 +624,6 @@ button:hover {
 
 /* -------------------------------------ВСЕ КНОПКИ------------------------------ */
 
-button:focus {
-    color: white;
-    background-color:#2196F3;
-}
-
 /* ----------------------------backdrop-------------------------- */
 
 .backdrop {
@@ -681,6 +679,20 @@ button:focus {
 .modal-button:hover {
     background-color: var(--secondary-text-color);
     border-radius: 50%;
+
+    transition-property: fill, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-svg:hover {
+    opacity: 1;
+    fill: var(--secondary-background-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------------ФУТЕР--------------------------------- */
