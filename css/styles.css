@@ -412,6 +412,10 @@ color: var(--primary-text-color);
     width: 20px;
     height: 20px;
     fill: var(--svg-primary-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icons-link:hover,
@@ -612,6 +616,10 @@ button:hover {
 
 .overlay-link {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-link:hover,
