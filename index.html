@@ -322,24 +322,32 @@
       <div class="backdrop is-hidden" data-modal>
         <div  class="modal">
           <form class="js-speaker-form">
-          <h3>Оставьте сои данные, мы вам перезвоним</h3>
 
+          <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+
+          <ul class="form-list">
+            <li class="form-item">
           <label for="name">Имя</label>
           <input type="text"  name="name" id="name">
-
+            </li>
+            <li class="form-item">
           <label for="tel">Телефон</label>
           <input type="tel" name="tel" id="tel">
-
+            </li>
+            <li class="form-item">
           <label for="mail">Почта</label>
           <input type="email" name="mail" id="mail">
-
+          </li>
+          <li class="form-item">
           <label for="com">Коментарий</label>
-          <textarea name="com" id="com" cols="30" rows="10"></textarea> 
-
+          <textarea name="com" id="com" cols="30" rows="10" placeholder="Введите текст"></textarea> 
+          </li>
+          <li class="form-item">
           <input type="checkbox" name="agreement" id="agreement">
           <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-
-          <button type="submit">Отправить</button>
+          </li class="form-item">
+        </ul>
+        <button type="submit">Отправить</button>
         </form>
           <button  class="modal-button" data-modal-close>
             <svg class="modal-svg" width="11" height="11">

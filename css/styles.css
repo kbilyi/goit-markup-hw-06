@@ -634,10 +634,6 @@ button:hover {
 
 /* ----------------------------backdrop-------------------------- */
 
-textarea {
-    resize: none;
-}
-
 .backdrop {
     position: fixed;
     width: 100%;
@@ -706,6 +702,35 @@ textarea {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ------------------------Form-backdrop------------------------- */
+textarea {
+    resize: none;
+}
+
+.form-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 40px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.form-list {
+    text-align: center;
+}
+
+.form-item {
+    margin-top: 28px;
+}
+
+.submit {
+
+}
+
 
 /* -------------------------------ФУТЕР--------------------------------- */
 
