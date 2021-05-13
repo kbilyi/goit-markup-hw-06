@@ -720,28 +720,45 @@ textarea {
 }
 
 .form-list {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .text-input{
     width: 448px;
     height: 40px;
-    left: 576px;
-    top: 314px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 }
 
-.form-item {
-    margin-top: 28px;
+.text-input:last-child {
+    width: 448px;
+    height: 120px;
 }
 
-.submit {
+.form-item:not(:last-child) {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+}
 
+.submit-button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    border: none;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--secondary-text-color);
 }
 
 
