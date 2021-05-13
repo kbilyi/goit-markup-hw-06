@@ -317,7 +317,11 @@
           </a>
           </li>
         </ul>
-        <form class="js-speaker-form">
+      </div>
+      </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div  class="modal">
+          <form class="js-speaker-form">
           <h3>Оставьте сои данные, мы вам перезвоним</h3>
 
           <label for="name">Имя</label>
@@ -330,14 +334,13 @@
           <input type="email" name="mail" id="mail">
 
           <label for="com">Коментарий</label>
-          <input type="text" name="com" id="com">
+          <input type="text" name="com" id="com"> 
+
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
 
           <button type="submit">Отправить</button>
         </form>
-      </div>
-      </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div  class="modal">
           <button  class="modal-button" data-modal-close>
             <svg class="modal-svg" width="11" height="11">
               <use href="./images/icons/sprite.svg#icon-close"> </use>
