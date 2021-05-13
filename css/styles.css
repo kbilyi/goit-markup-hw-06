@@ -634,6 +634,10 @@ button:hover {
 
 /* ----------------------------backdrop-------------------------- */
 
+textarea {
+    resize: none;
+}
+
 .backdrop {
     position: fixed;
     width: 100%;
