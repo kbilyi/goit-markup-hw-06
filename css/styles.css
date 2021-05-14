@@ -719,8 +719,9 @@ textarea {
     color: var(--primary-text-color);
 }
 
-.form-list {
-
+.form-list:last-child {
+    width: 448px;
+    height: 120px;
 }
 
 .text-input{
@@ -732,9 +733,13 @@ textarea {
     border-radius: 4px;
 }
 
-.text-input:last-child {
-    width: 448px;
-    height: 120px;
+.text-input-a {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.text-input {
+
 }
 
 .form-item:not(:last-child) {
