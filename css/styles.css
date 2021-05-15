@@ -743,20 +743,15 @@ textarea {
 .textarea-input {
     width: 448px;
     height: 120px;
+    margin-bottom: 20px;
 }
 
 .text-input{
     width: 448px;
-    height: 40px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-}
-
-.text-input {
-    border-radius: 4px;
-    box-sizing: border-box;
     outline: var(--secondary-background-color);
 }
 
@@ -766,20 +761,23 @@ textarea {
     border-radius: 4px;
 }
 
+.text-input-cont {
+    height: 40px;
+}
+
 .contract {
     color: var(--secondary-background-color);
     text-decoration: underline;
 }
 
 .form-item:not(:last-child) {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .form-list input::placeholder {
-    margin-top: 12px;
-    margin-left: 16px;
+    top: 12px;
+    left: 16px;
 }
 
 .icon-form {
