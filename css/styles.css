@@ -709,6 +709,19 @@ textarea {
 }
 
 .form-title {
+    margin-bottom: 10px;
+}
+
+.name-input {
+    margin-bottom: 4px;
+}
+
+.text-in-com {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.form-title {
     font-size: 20px;
     line-height: 23px;
     margin-top: 40px;
@@ -717,6 +730,14 @@ textarea {
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+}
+
+.agree-input {
+    margin-left: 9px;
+}
+
+.form-item {
+    margin-left: 40px;
 }
 
 .form-list:last-child {
@@ -733,19 +754,38 @@ textarea {
     border-radius: 4px;
 }
 
-.text-input-a {
+.text-input {
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: var(--secondary-background-color);
+}
+
+.text-input:focus  {
+    border: 1px solid var(--secondary-background-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.contract {
+    color: var(--secondary-background-color);
+    text-decoration: underline;
+}
+
+.form-item:not(:last-child) {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-list input::placeholder {
     margin-top: 12px;
     margin-left: 16px;
 }
 
-.text-input {
-
-}
-
-.form-item:not(:last-child) {
-    margin-top: 28px;
-    display: flex;
-    flex-direction: column;
+.icon-form {
+    position: relative;
+    bottom: 27px;
+    left: 15px;
 }
 
 .submit-button {
@@ -753,14 +793,17 @@ textarea {
     height: 50px;
     font-size: 16px;
     line-height: 1.87;
+    margin-top: 30px;
+    position: absolute;
     
     border: none;
     display: inline-block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-left: 165px;
 
-    background: #2196F3;
+    background: var(--secondary-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--secondary-text-color);
