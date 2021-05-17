@@ -654,6 +654,7 @@ button:hover {
 }
 
 .modal {
+    padding: 40px;
     width: 528px;
     height: 581px;
     background-color: var(--secondary-text-color);
@@ -724,7 +725,6 @@ textarea {
 .form-title {
     font-size: 20px;
     line-height: 23px;
-    margin-top: 40px;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -734,10 +734,6 @@ textarea {
 
 .agree-input {
     margin-left: 9px;
-}
-
-.form-item {
-    margin-left: 40px;
 }
 
 .textarea-input {
@@ -771,6 +767,7 @@ textarea {
 }
 
 .form-item:not(:last-child) {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -781,25 +778,21 @@ textarea {
 }
 
 .icon-form {
-    position: relative;
-    bottom: 27px;
-    left: 15px;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
 }
 
 .submit-button {
-    width: 200px;
-    height: 50px;
     font-size: 16px;
     line-height: 1.87;
+    margin: 0 auto;
     margin-top: 30px;
-    position: absolute;
+    padding: 10px 55px;
     
     border: none;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
+    display: block;
     letter-spacing: 0.06em;
-    margin-left: 165px;
 
     background: var(--secondary-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
