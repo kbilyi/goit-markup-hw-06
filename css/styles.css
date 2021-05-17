@@ -776,9 +776,9 @@ textarea {
     fill: var(--secondary-background-color);
 }
 
-.form-list input::placeholder {
-    top: 12px;
-    left: 16px;
+.textarea-input  input::placeholder {
+    padding-top: 12px;
+    padding-left: 16px;
 }
 
 .icon-form {
