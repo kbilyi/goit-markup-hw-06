@@ -875,8 +875,68 @@ color: var(--secondary-text-color);
     background: var(--accent-background-footer-color);
  }
 
+/* ----------------------------------Form-footer------------------ */
 
+.footer-form {
+    margin-left: 93px;
+}
 
+.footer-form:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-form input::placeholder {
+    padding-left: 16px;
+}
 
+.sub-title {
+    width: 219px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--secondary-text-color);
+}
+
+.input-footer-form {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 20px;  
+    letter-spacing: 0.03em;
+
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.sub-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    margin-left: 12px;
+    
+    border: none;
+    position: relative;
+
+    color: var(--secondary-text-color);
+    background: var(--secondary-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.foter-form-svg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
 
