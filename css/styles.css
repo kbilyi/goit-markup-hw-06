@@ -776,7 +776,7 @@ textarea {
     fill: var(--secondary-background-color);
 }
 
-.textarea-input  input::placeholder {
+.textarea-input input::placeholder {
     padding-top: 12px;
     padding-left: 16px;
 }
@@ -925,9 +925,13 @@ color: var(--secondary-text-color);
     line-height: 1.87;
     letter-spacing: 0.06em;
     margin-left: 12px;
+
     
     border: none;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: var(--secondary-text-color);
     background: var(--secondary-background-color);
@@ -935,8 +939,9 @@ color: var(--secondary-text-color);
 }
 
 .foter-form-svg {
-    position: absolute;
+    position: relative;
     width: 24px;
     height: 24px;
+    margin-left: 10px;
 }
 
