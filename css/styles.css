@@ -945,3 +945,6 @@ color: var(--secondary-text-color);
     margin-left: 10px;
 }
 
+.footer-form-container {
+    display: flex;
+}
