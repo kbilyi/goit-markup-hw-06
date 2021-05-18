@@ -732,23 +732,35 @@ textarea {
     color: var(--primary-text-color);
 }
 
-.agree-input {
-    margin-left: 9px;
-}
-
 .textarea-input {
     width: 448px;
     height: 120px;
+    padding-left: 16px;
+    padding-top: 12px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
     margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: var(--secondary-background-color);
+
+    transition-property: fill, outline, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-input{
+.text-input:not(:last-child) {
     width: 448px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     outline: var(--secondary-background-color);
+    padding-left: 36px;
+
+    transition-property: fill, outline, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-input:focus  {
@@ -774,11 +786,43 @@ textarea {
 
 .form-item:focus-within > .icon-form {
     fill: var(--secondary-background-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-input input::placeholder {
     padding-top: 12px;
     padding-left: 16px;
+}
+
+
+.agree-box {
+    visibility: hidden;
+}
+
+.agree-input::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--primary-text-color);
+    margin-right: 8px;
+}
+
+.checkbox:checked + .agree-input::before {
+    background-image:url(../images/icons/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--secondary-background-color);
+    border-color: var(--secondary-background-color);
+
+    transition-property: fill, border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-form {
