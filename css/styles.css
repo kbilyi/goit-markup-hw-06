@@ -801,7 +801,7 @@ textarea {
     padding-left: 16px;
 }
 
-
+/* ---------------------------.visually-hidden------------------------------- */
 .agree-box {
     position: absolute;
     width: 1px;
@@ -815,6 +815,7 @@ textarea {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/* ------------------------------------------------------------------------------------ */
 
 .agree-input::before {
     content: "";
