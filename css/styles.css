@@ -816,9 +816,8 @@ textarea {
     margin-right: 8px;
 }
 
-.agree-input:hover,
-.agree-input:focus {
-    cursor: pointer;
+.agree-input:focus + .agree-input::before {
+    border-color: var(--secondary-background-color);
 }
 
 .checkbox:checked + .agree-input::before {
@@ -855,6 +854,10 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--secondary-text-color);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
