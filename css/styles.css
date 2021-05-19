@@ -827,8 +827,8 @@ textarea {
     margin-right: 8px;
 }
 
-.agree-input:focus + .agree-input::before {
-    border: var(--secondary-background-color);
+.checkbox:focus + .agree-input::before {
+    border-color: var(--secondary-background-color);
 }
 
 .checkbox:checked + .agree-input::before {
