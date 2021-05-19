@@ -694,6 +694,10 @@ button:hover {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-button:hover > .modal-svg,
+.modal-button:focus > .modal-svg {
+    fill: var(--secondary-background-color);
+}
 
 .modal-svg:hover {
     opacity: 1;
@@ -787,7 +791,7 @@ textarea {
 .form-item:focus-within > .icon-form {
     fill: var(--secondary-background-color);
 
-    transition-property: fill;
+    transition-property: fill, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -810,6 +814,11 @@ textarea {
     border-radius: 2px;
     border: 2px solid var(--primary-text-color);
     margin-right: 8px;
+}
+
+.agree-input:hover,
+.agree-input:focus {
+    cursor: pointer;
 }
 
 .checkbox:checked + .agree-input::before {
